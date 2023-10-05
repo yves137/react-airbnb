@@ -15,10 +15,10 @@ export function Card(props){
                 badgeText && 
                 <div className="card--badge">{badgeText}</div>
             }
-            <img src={`${props.coverImg}`} alt=""  className="card--image" />
+            <img src={`${props.coverImg}`} alt={props.title}  className="card--image" />
 
             <div className="card--stats">
-                <img src="star.png" alt="" className="card--star" />
+                <img src="star.png" alt="Star Icon" className="card--star" />
                 <span>{props.stats.rating}</span>
                 <span className="gray">({props.stats.reviewCount}) • </span>
                 <span className="gray">{props.location}</span>
